@@ -1,0 +1,45 @@
+1) if something is export default
+then it can be imported by any name and it should not have {}
+export default { photo1, photo2, photo3 }
+import Image from "../../"
+
+2) if a file has multiple export 
+then they need to be imported by the same name with {}
+export{ Sizes, shadows, colors}
+
+import {Sizes} from "../../"
+import {colors, shadows} from "../../"
+
+
+3) all icons imported and then exported to index.js
+icons.js
+export default {
+  heart,
+  menu,
+  search,
+  filter,
+  left,
+  heartOutline,
+  share,
+  location,
+  chevronLeft,
+  chevronRight
+};
+
+5) images.js
+export default {
+  profile,
+};
+
+6) theme.js
+export { COLORS, FONT, SIZES, SHADOWS };
+
+
+7)  index.js
+import images from "./images";
+import icons from "./icons";
+import { COLORS, FONT, SIZES, SHADOWS } from "./theme";
+
+export { images, icons, COLORS, FONT, SIZES, SHADOWS };
+
+
