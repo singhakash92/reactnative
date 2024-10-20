@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View, FlatList, Image, Dimensions, TouchableOpacity,Appearance } from "react-native";
 import React from "react";
-import { convertToRGBA } from "react-native-reanimated";
+import Carousel from "./carousel"
 
 
 const mostBoughtShare = [
@@ -88,6 +88,7 @@ const index = () => {
   };
 
   return (
+    // <Carousel></Carousel>
     <View style={{ backgroundColor: "white", height: "100%", padding: 5 }}>
       {/* card which top selling on groww */}
       <View
